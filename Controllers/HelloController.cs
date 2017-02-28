@@ -9,14 +9,14 @@ namespace hello.Controllers
     [Route("api/niko/[controller]")]
     public class HelloController : Controller
     {
-        httpclienttest client = new httpclienttest();
+       
 
         // GET api/values
         [HttpGet]
         public async Task< IEnumerable<string>> Get()
         {
-          var hello = await  client.GetProductAsync("http://188.166.236.181:5501/api/selly/hello"); 
-          return new string[] { "Hello Niko Memanggil service",hello};
+          
+          return new string[] { "Hello World"};
         }
 
         // GET api/values/5
